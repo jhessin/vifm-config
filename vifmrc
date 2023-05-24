@@ -133,6 +133,7 @@ mark h ~/
 "  %u uses command's output to build a file list
 "  see `:help vifm-macros` and `:help vifm-filename-modifiers` for more
 
+command! cmd !cmd
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %c.zip %f
@@ -534,8 +535,8 @@ nnoremap <a-o> :sync %c<cr>
 " Swap panes
 nnoremap <c-u> <c-w>x
 
-nnoremap ms :bmark<space>
-nnoremap mg :bmarks<cr>
+nnoremap mn :bmark<space>
+nnoremap mm :bmarks<cr>
 
 " ------------------------------------------------------------------------------
 " Various customization examples
