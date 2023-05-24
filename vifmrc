@@ -421,7 +421,12 @@ filextype */
 " For OS X:
 " filetype * open
 " For Windows:
-filetype * explorer %"f &
+filetype *
+       \ explorer %"f &,
+       \ {Edit in neovide}
+       \ neovide %f,
+       \ {Edit in neovim}
+       \ nvim %f,
 
 " ------------------------------------------------------------------------------
 " Panel configuration examples
